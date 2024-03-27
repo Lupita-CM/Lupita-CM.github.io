@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link rel="stylesheet" href="../CSS/Register.css">
+    </head>
+    <body>
+        <form action="/submit_registration" method="post">
+            <h1>Registro</h1>
+            <div id="Box"><!--Padre-->
+                <div id="Personales">
+                    <h3>Datos personales:</h3>
+                </div>
+                <div class="Datos"> <!--datos personales-->
+                    <div class="DatosUno">
+                        <div class="DatosText">
+                            <label for="name">*Nombre:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="DatosText">
+                            <label for="surname">*Apellidos:</label>
+                            <input type="text" id="surname" name="surname">
+                        </div>
+                        <div class="DatosText">
+                            <label for="email">*Correo electrónico:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="DatosText">
+                            <label for="email">*Confirma Correo
+                                electrónico:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="DatosDos">
+                        <div class="DatosText">
+                            <label for="pwd">*Contraseña:</label>
+                            <input type="password" id="pwd" name="pwd">
+                        </div>
+                        <div class="DatosText">
+                            <label for="cpwd">*Confirma Contraseña:</label>
+                            <input type="password" id="cpwd" name="cpwd">
+                        </div>
+                    </div>
+                </div>
+                <div id="Envio">
+                    <h3>Datos de envío:</h3>
+                </div>
+                <div class="Datos">
+                    <div class="DatosUno">
+                        <div class="DatosText">
+                            <label for="estado">*Estado:</label>
+                            <select id="estado" name="estado">
+                                <option value="cdmx">Ciudad de México</option>
+                                <option value="jalisco">Jalisco</option>
+                                <!-- Otras opciones de estado -->
+                            </select>
+                        </div>
+                        <div class="DatosText">
+                            <label for="codigo_postal">*Código Postal:</label>
+                            <input type="text" id="codigo_postal"
+                                name="codigo_postal">
+                        </div>
+                        <div class="DatosText">
+                            <label for="ciudad">*Ciudad:</label>
+                            <input type="text" id="ciudad" name="ciudad">
+                        </div>
+                        <div class="DatosText">
+                            <label for="colonia">*Colonia:</label>
+                            <select id="colonia" name="col">
+                                <option value="Col1">Col 1</option>
+                                <option value="Col2">Col 2</option>
+                                <!-- Otras opciones de estado -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="DatosDosDos">
+                        <div class="DatosText">
+                            <label for="numero">*Número Ext:</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+
+                        <div class="DatosText">
+                            <label for="numero_inferior">Número Int:</label>
+                            <input type="text" id="numero_inferior"
+                                name="numero_inferior">
+                        </div>
+                        <div class="DatosText">
+                            <label for="telefono">*Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono"
+                                pattern="[0-9]{10}"
+                                title="Formato: 10 dígitos numéricos">
+                        </div>
+                        <div class="DatosText">
+                            <label for="DescripcionDomicilio">Descipción del
+                                domicilio:</label>
+                            <textarea id="DescripcionDomicilio"
+                                name="Domicilio"></textarea>
+                        </div>
+                    </div>
+                    <!-- CAPTCHA -->
+                    <!-- Checkbox para aceptar términos y condiciones -->
+                    <div id="captcha">
+                        <input type="checkbox" id="terminos_condiciones"
+                            name="terminos_condiciones">
+                        <label for="terminos_condiciones">*Al regístrarme,
+                            declaro que soy mayor de edad y acepto el<p>
+                                <a href="http://">Aviso de Privacidad, Politicas
+                                    de
+                                    Venta y Términos y
+                                    Condiciones</a></p></label>
+                    </div>
+                    <!-- Botón de enviar -->
+                    <input style="font-weight: bold;" type="submit"
+                        value="¡Registrarme!" formaction="index.html">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

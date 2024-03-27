@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Carrois Gothic", sans-serif;
+}
+
+#Box {
+
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#Personales {
+    background-color: #e5e6ec;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#Envio {
+    background-color: #D8DBF6;
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 5px;
+}
+
+.Datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.DatosUno {
+
+    width: 100%;
+    display: flex;
+    margin: 1%;
+
+    /* justify-content: space-around; */
+}
+
+.DatosDos {
+
+    width: 50%;
+    display: flex;
+}
+
+.DatosDosDos {
+
+    width: 80%;
+    display: flex;
+}
+
+.DatosText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+#captcha {
+    margin: 30px;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    margin: 5px;
+    height: 40px;
+    border-radius: 7px;
+    width: calc(100% - 90%);
+    border: 1px solid black;
+}
+input[type="submit"]:hover {
+    background-color: rgb(243, 200, 108);
+}
+
+label {
+    font-size: larger;
+    margin: 8px;
+}
+
+input[type="text"] {
+    margin: 5px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    width: calc(100% - 80px);
+    border: 1px solid black;
+}
+
+input[type="password"] {
+    margin: 5px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    width: calc(100% - 80px);
+    border: 1px solid black;
+}
+
+select {
+    width: 200px;
+    /* Ancho del select */
+    height: 30px;
+    /* Altura del select */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    border: 1px solid black;
+    /* Borde del select */
+    padding: 5px;
+    /* Espacio interior */
+    font-size: 14px;
+    /* Tamaño de fuente */
+    color: #333;
+    /* Color del texto */
+}
+
+input[type="email"] {
+    margin: 5px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    width: calc(100% - 80px);
+    border: 1px solid black;
+}
+
+input[type="tel"] {
+    margin: 5px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    width: calc(100% - 80px);
+    border: 1px solid black;
+}
+
+#DescripcionDomicilio {
+    border-radius: 5px;
+    width: 100%;
+    height: 90px;
+}

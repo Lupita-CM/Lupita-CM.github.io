@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/AddEditProduct.css">
+    <link rel="stylesheet" href="../CSS/MenuAdmin.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Producto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="buscador"><input type="text" placeholder="¿Qué estás buscando?" required>
+                <button><span class="material-symbols-outlined">search</span></button>
+            </div>
+            <div class="icono"><img src="../IMG/Icon.png"></div>
+            <ul>
+                <li><a>Categorías</a>
+                    <ul id="deployed-list">
+                        <li class="edit">
+                            <a class="col1">
+                                <span class="item-first-col">Categoria</span>
+                            </a>
+                            <a class="col2">
+                                <span class="material-symbols-outlined">edit</span>
+                            </a>
+                            <a class="col2">
+                                <span class="material-symbols-outlined">edit</span>
+                            </a>
+                        </li>
+                        <li class="edit">
+                            <a class="col1">
+                                <span class="item-first-col"> + Categoria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Marcas</a>
+                    <ul id="deployed-list">
+                        <li class="edit">
+                            <a class="col1">
+                                <span class="item-first-col">Marca</span>
+                            </a>
+                            <a class="col2">
+                                <span class="material-symbols-outlined">edit</span>
+                            </a>
+                            <a class="col2">
+                                <span class="material-symbols-outlined">edit</span>
+                            </a>
+                        </li>
+                        <li class="edit">
+                            <a class="col1">
+                                <span class="item-first-col"> + Marca</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="ProductsAdmin.html">Productos</a></li>
+                <li><a href="Ticket.html">Generar Ticket</a></li>
+            </ul>
+
+            <div class="usuario"><span class="material-symbols-outlined">person</span></div>
+        </nav>
+    </header>
+    <form action="">
+        <div class="product">
+            <div class="img">
+                <button type="button">
+                    <span class="material-symbols-outlined">
+                    add
+                    </span>
+                </button>
+            </div>
+            <div class="info">
+                <div class="name">
+                    <span>Nombre del producto</span>
+                    <input type="text" placeholder="Agregue nombre del producto">
+                </div>
+                <div>
+                    <span>Marca</span>
+                    <select>
+                        <option>Seleccione la marca a la que pertenece el producto</option>
+                        <option>Marca 1</option>
+                        <option>Marca 2</option>
+                        <option>Marca 3</option>
+                        <option>Marca 4</option>
+                        <option>Marca 5</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Categoria</span>
+                    <select>
+                        <option>Seleccione la categoria a la que pertenece el producto</option>
+                        <option>Categoria 1</option>
+                        <option>Categoria 2</option>
+                        <option>Categoria 3</option>
+                        <option>Categoria 4</option>
+                        <option>Categoria 5</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Precio</span>
+                    <input type="number" placeholder="Agregue el precio del producto">
+                </div>
+                <div>
+                    <span>Cantidad</span>
+                    <div class="quantity">
+                        <button type="button">
+                            <span class="material-symbols-outlined">
+                            remove
+                            </span>
+                        </button>
+                        <input type="number" value="1" disabled>
+                        <button type="button">
+                            <span class="material-symbols-outlined">
+                            add
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <span class="label">Descripción</span>
+                    <textarea placeholder="Agregue una descripcion breve del producto"></textarea>
+                </div>
+            </div>
+            <div id="add">
+                <button type="submit" class="cancel" formaction="ProductsAdmin.html">Cancelar</button>
+                <button type="button">Guardar cambios</button>
+            </div>
+        </div>
+    </form>
+    <div class="circulo"><img src="../IMG/logos_whatsapp-icon.png"></div>
+    <div class="bottom">
+        <div>correocontacto@gmail.com</div>
+        <div>Tel: 4455655766</div>
+        <div>Redes Sociales
+            <img src="../IMG/logos_facebook.png">
+            <img src="../IMG/skill-icons_instagram.png">
+        </div>
+    </div>
+</body>
+</html>

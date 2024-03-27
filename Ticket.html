@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../CSS/Ticket.css">
+        <title>Ticket</title>
+    </head>
+    <body>
+        <form action>
+            <div class="principal">
+                <div class="titulo"> <!-- Contenedor titulo-->
+                    <h3>Número de pedido</h3>
+                </div>
+                <div class="contenedor"><!--Contenedor-->
+                    <div>
+                        <label for="fecha">Fecha de pedido:</label>
+                        <input type="date" id="fecha" readonly>
+                        <hr>
+                    </div>
+                    <div class="precio">
+                        <label for="precio">Precio:</label>
+                    </div>
+                    <hr>
+                    <div><!--Lista de productos aqui-->
+
+                        <div class="General">
+                            <div class="conDos">
+                                <div>
+                                    <img src alt="Producto">
+                                </div>
+                                <div class="describe">
+                                    <span>Nombre del producto</span>
+                                    <span>Descripción</span>
+                                    <span>Cantidad</span>
+
+                                </div>
+                            </div>
+                            <div class="describe">
+                                <span>$0000.00</span>
+                            </div>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div><!-- Comienza el resumende la compra -->
+                        <strong>Resumen de la compra</strong>
+                        <div class="one">
+                            <div class="izq"><span>Total de pedido</span></div>
+                            <div class="der"><span>$0000.000</span></div>
+                        </div>
+                        <div class="one">
+                            <div class="izq"><span>Descuento</span></div>
+                            <div class="der">$-0000.000</div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div
+                        class="one"><!-- Comienza el fin con el precio total y el boton de imprimir Ticket -->
+                        <div class="izq">
+                            <span><strong>Total</strong></span>
+                        </div>
+                        <div class="der">
+                            <span>$0000.00</span>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="button" value="Imprimir Ticket">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

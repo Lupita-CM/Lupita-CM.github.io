@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
+*{
+    padding: 0;    
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: static;
+    width: 100%;
+    box-shadow: 2px 0 3px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 191, 60);
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    font-family: "Carrois Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.buscador{
+    padding: 9px;
+}
+.buscador input{
+    /*margin-top: -5px;*/
+    border-radius: 3px;
+    width: 300px;
+    height: 25px;
+}
+.buscador input::placeholder{
+    text-align: center;
+}
+.icono{
+    width: 20%;
+    position: absolute;
+    top: -5;
+    left: 0;
+}
+.icono img{
+    width: 140px;
+}
+.usuario{
+    width: 20%;
+    display: flex;
+    position: absolute;
+    right: 0;
+    justify-content: flex-end;
+}
+.usuario span{
+    font-size: 90px;
+}
+
+.buscador button{
+    margin-left: -5px;
+    border-radius: 3px;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav > ul li:hover > a{
+    color:  rgb(255, 191, 60);
+    background-color: #fff;
+}
+
+nav a{
+    display: block;
+    padding: 1rem 1.3rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav form{
+    padding-right: 1.5rem;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px 0  rgb(255, 191, 60);
+}
+
+nav li:hover ul{
+    display: flex;
+    background-color:  rgb(255, 191, 60);
+}
+
+.circulo{
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 3rem;
+    background-color: rgb(217, 217, 217);
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+}
+.circulo img{
+    width: 30px;
+    align-items: center;
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    font-family: "Carrois Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bottom div{
+    padding-right: 20px;
+    border-left: 2px solid white;
+}
+.bottom div:first-child{
+    border-left: none;
+}
+.bottom div:last-child{
+    display: flex;
+}
+.bottom div:last-child img{
+    width: 25px;
+    margin-left: 10px;
+}
+

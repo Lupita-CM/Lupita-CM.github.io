@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
+.product{
+    margin: 8% 15% 7% 15%;
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    background-color: #e6dcdc;
+}
+
+.img{
+    width: 30%;
+    height: 40vh;
+    background-color: white;
+    align-self: flex-start;
+    margin: 30px 20px 10px 10px;
+}
+
+.info{
+    height: 35vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Carrois Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.name{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.desc{
+    font-size: 20px;
+    width: 100%;
+    height: 10vh;
+    margin-left: 10px;
+    margin-top: 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.info span{
+    margin-bottom: 15px;
+}
+
+.info span:nth-child(5){
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+.quantity input{
+    width: 50px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#add{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 13vh;
+}
+
+#add button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    border-bottom: 10px;
+    border-radius: 5px;
+    width: 45%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: "Carrois Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 1,
+    'opsz' 24
+}
+
+.quantity button{
+    height: 30px;
+    width: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0px;
+}
+.quantity{
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(243, 200, 108);
+}
