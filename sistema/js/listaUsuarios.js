@@ -91,29 +91,19 @@ document.addEventListener("DOMContentLoaded", () => {
         txtNombre.value.trim().length > 60) {
         txtNombre.setCustomValidity("El nombre es obligatorio (entre 2 y 60 caracteres)");
     }
-    if (txtContrasenia.value.trim().length < 6 ||
-        txtContrasenia.value.trim().length > 20) {
-        txtContrasenia.setCustomValidity("La contraseña es obligatoria (entre 2 y 60 caracteres)");
-    }
-    if (txtContrasenia2.value.trim().length < 6 ||
-        txtContrasenia2.value.trim().length > 20) {
-        txtContrasenia2.setCustomValidity("Confirma la contraseña");
-    }
-    let error = document.getElementById("divmensaje");
-    if (
-      txtContrasenia.value.trim() != txtContrasenia2.value.trim()
-    ) {
-      txtContrasenia2.setCustomValidity(
-        "Las contraseñas deben coincidir"
-      );
-      error.innerText = "Las contraseñas deben coincidir";
-    }else{
-      txtContrasenia2.setCustomValidity("");
-      error.innerText = "La longitud de la contraseña no cumple con los caracteres requeridos (entre 2 y 60 caracteres)";
-    }
-
+    
     if (txtTel.value.trim().length > 0 && txtTel.value.trim().length != 10) {
         txtTel.setCustomValidity("El teléfono debe tener 10 dígitos");
+    }
+    var expresionCorreo = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/;
+    let errorEmail = document.getElementById("divEmail");
+
+    if(!expresionCorreo.test(txtEmail.value.trim())){
+      txtEmail.setCustomValidity("No");
+      errorEmail.innerText="El formato del correo no es válido";      
+      if(txtEmail.value.length == 0){
+        errorEmail.innerText="El correo es obligatorio";      
+      }
     }
 
     if (e.target.form.checkValidity()) {
@@ -123,10 +113,22 @@ document.addEventListener("DOMContentLoaded", () => {
       let nuevoCorreo = txtEmail.value.trim();
       let usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
-      if (
-        document.querySelector("#mdlRegistro .modal-title").innerText ==
-        "Agregar"
-      ) {
+      if (document.querySelector("#mdlRegistro .modal-title").innerText == "Agregar") {
+        if (txtContrasenia.value.trim().length < 6 || txtContrasenia.value.trim().length > 20) {
+          txtContrasenia.setCustomValidity("La contraseña es obligatoria (entre 2 y 60 caracteres)");
+        }
+        if (txtContrasenia2.value.trim().length < 6 || txtContrasenia2.value.trim().length > 20) {
+          txtContrasenia2.setCustomValidity("Confirma la contraseña");
+        }
+        let error = document.getElementById("divmensaje");
+        if (txtContrasenia.value.trim() != txtContrasenia2.value.trim()) {
+          txtContrasenia2.setCustomValidity("Las contraseñas deben coincidir");
+          error.innerText = "Las contraseñas deben coincidir";
+        }else{
+          txtContrasenia2.setCustomValidity("");
+          error.innerText = "La longitud de la contraseña no cumple con los caracteres requeridos (entre 2 y 60 caracteres)";
+        }
+
         let usuarioExistente = usuarios.find(
           (element) => element.correo === nuevoCorreo
         );
