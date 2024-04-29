@@ -124,6 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (txtContrasenia.value.trim() != txtContrasenia2.value.trim()) {
           txtContrasenia2.setCustomValidity("Las contraseñas deben coincidir");
           error.innerText = "Las contraseñas deben coincidir";
+          e.preventDefault();
+          return;
         }else{
           txtContrasenia2.setCustomValidity("");
           error.innerText = "La longitud de la contraseña no cumple con los caracteres requeridos (entre 2 y 60 caracteres)";
